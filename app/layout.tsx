@@ -7,7 +7,7 @@ import localFont from "next/font/local";
 
 const signature = localFont({
   // src: "./fonts/Photograph_Signature.ttf",
-  src: "./fonts/holland.ttf",
+  src: "./fonts/Holland.ttf",
   variable: "--font-signature",
 });
 

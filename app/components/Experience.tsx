@@ -59,7 +59,7 @@ const ExperienceTimeline = () => {
           >
             {/* Replace with your actual image path */}
             <Image
-              src="/het-patel.JPG"
+              src="/het-patel.jpg"
               alt="Head"
               className="w-full h-full object-cover"
               width={400}
