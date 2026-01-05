@@ -1,14 +1,39 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Inter, Roboto_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar";
+import Sidebars from "./components/Sidebars";
+import localFont from "next/font/local";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const signature = localFont({
+  // src: "./fonts/Photograph_Signature.ttf",
+  src: "./fonts/holland.ttf",
+  variable: "--font-signature",
+});
+
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
+
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
+
+// const agustina = Agustina({
+//   variable: "--font-signature",
+//   subsets: ["latin"],
+//   weight: "400",
+// });
+
+const inter = Inter({
+  variable: "--font-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const robotoMono = Roboto_Mono({
+  variable: "--font-mono",
   subsets: ["latin"],
 });
 
@@ -23,11 +48,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+    <html
+      lang="en"
+      className={` ${inter.variable} ${robotoMono.variable} ${signature.variable} antialiased`}
+    >
+      <body>
+        <Navbar />
+        <Sidebars>{children}</Sidebars>
       </body>
     </html>
   );

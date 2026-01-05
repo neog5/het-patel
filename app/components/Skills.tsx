@@ -1,0 +1,52 @@
+"use client";
+import Image from "next/image";
+import { skillsData } from "../utils/portfolio";
+import { motion } from "motion/react";
+
+export default function Skills() {
+  const variants = {
+    visible: (i: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: { delay: i * 0.05, duration: 0.5 },
+    }),
+    hidden: {
+      opacity: 0,
+      y: 30,
+    },
+  };
+  return (
+    <div id="skills" className="">
+      <div className="px-64 py-20 xs:py-24 md:py-32 lg:py-36">
+        {/* <h2 className="heading-secondary">Skills</h2> */}
+        <h2 className="flex items-center text-3xl font-bold mb-10 w-full whitespace-nowrap before:content-[''] before:block before:h-[1px] before:bg-slate-700 before:w-full before:mr-5 before:relative before:top-[2px]">
+          <span className="font-mono text-accent text-xl mr-2">04.</span>
+          Technologies I Use
+        </h2>
+        <div className="w-full flex justify-between flex-wrap gap-x-4 gap-y-10 max-lg:gap-y-6">
+          {skillsData.map((item, i) => (
+            <motion.div
+              custom={i}
+              variants={variants}
+              initial="hidden"
+              whileInView="visible"
+              whileHover={{ scale: 1.1 }}
+              viewport={{ margin: "50px", once: true }}
+              key={i}
+              className="flex items-center justify-center bg-bg-secondary shadow-md gap-x-4 rounded-xl px-5 py-2 max-lg:px-2"
+            >
+              <Image
+                src={item.icon}
+                alt={`${item.name} Skills Image`}
+                width={100}
+                height={100}
+                className="h-auto w-[40px]"
+              />
+              <p className="text-sm">{item.name}</p>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
