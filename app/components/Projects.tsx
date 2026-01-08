@@ -1,6 +1,9 @@
 "use client";
 import Image from "next/image";
 import { motion } from "motion/react";
+// import { Github } from "lucide-react";
+import { SiGithub } from "@icons-pack/react-simple-icons";
+import { projectsData } from "../utils/portfolio";
 
 // 1. Data Interface
 interface FeaturedProject {
@@ -14,36 +17,6 @@ interface FeaturedProject {
 }
 
 // 2. Mock Data (Replace with your Content)
-const FEATURED_DATA: FeaturedProject[] = [
-  {
-    title: "Cirqle",
-    description:
-      "A web app that helps users track and organize job applications, collaborate with friends and match resume to job descriptions using AI.",
-    tech: ["Next.js", "TailwindCSS", "Supabase", "PostgreSQL", "Gemini API"],
-    github: "https://github.com",
-    external: "https://vscode.com",
-    cover: "/project.png",
-  },
-  {
-    title: "PerryOps",
-    description:
-      "A pre-operative procedure management app that streamlines the process for patients and healthcare providers.",
-    tech: ["Flutter", "FastAPI", "Firebase", "MedGemma", "Qwen-32B"],
-    github: "",
-    external: "https://course.com",
-    cta: "https://course.com",
-    cover: "/project.png",
-  },
-  {
-    title: "Pic2Plate",
-    description:
-      "A mobile apps that suggests recipes based on ingredients from a photo of your fridge or pantry using image recognition and AI.",
-    tech: ["Flutter", "FastAPI", "Python", "RapidAPI", "Gemini API"],
-    github: "https://github.com",
-    external: "https://spotify.com",
-    cover: "/project.png",
-  },
-];
 
 const Featured = () => {
   return (
@@ -60,7 +33,7 @@ const Featured = () => {
       </motion.h2>
 
       <ul className="flex flex-col gap-24">
-        {FEATURED_DATA.map((project, i) => {
+        {projectsData.map((project, i) => {
           const isEven = i % 2 === 0;
 
           return (
@@ -91,12 +64,10 @@ const Featured = () => {
               `}
               >
                 <p className="font-mono text-accent text-sm mb-2">
-                  Featured Project
+                  {project.tagline || "Featured Project"}
                 </p>
                 <h3 className="text-text font-bold text-2xl mb-5 hover:text-accent transition-colors">
-                  <a href={project.external || project.github}>
-                    {project.title}
-                  </a>
+                  <a href={project.github}>{project.title}</a>
                 </h3>
 
                 {/* Description Box */}
@@ -125,7 +96,7 @@ const Featured = () => {
                 {/* Links */}
                 <div
                   className={`
-                  flex items-center gap-4 mt-6 text-slate-200
+                  flex items-center gap-4 mt-6 text-slate-400
                   ${isEven ? "justify-start" : "md:justify-end"}
                 `}
                 >
@@ -135,10 +106,10 @@ const Featured = () => {
                       className="hover:text-accent transition-colors"
                       aria-label="Github"
                     >
-                      G
+                      <SiGithub />
                     </a>
                   )}
-                  {project.external && (
+                  {/* {project.external && (
                     <a
                       href={project.external}
                       className="hover:text-accent transition-colors"
@@ -146,13 +117,13 @@ const Featured = () => {
                     >
                       E
                     </a>
-                  )}
+                  )} */}
                   {project.cta && (
                     <a
                       href={project.cta}
                       className="border border-accent text-accent px-4 py-1 rounded text-sm font-mono hover:bg-accent/10 transition-colors"
                     >
-                      Learn More
+                      {project.ctaText || "Learn More"}
                     </a>
                   )}
                 </div>
@@ -170,10 +141,10 @@ const Featured = () => {
               `}
               >
                 <a
-                  href={project.external || project.github}
+                  href={project.github}
                   target="_blank"
                   rel="noreferrer"
-                  className="w-full h-full block relative rounded bg-accent/40 md:hover:bg-transparent transition-all duration-300 group overflow-hidden"
+                  className="w-full h-full block relative rounded bg-text/40 md:hover:bg-transparent transition-all duration-300 group overflow-hidden"
                 >
                   {/* The actual image with tinting effects */}
                   <div className="md:group-hover:opacity-100 md:opacity-70 transition-opacity duration-300 h-full">

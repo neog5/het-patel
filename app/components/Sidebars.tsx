@@ -3,7 +3,8 @@
 import React from "react";
 import { motion } from "motion/react";
 import { author } from "../utils/portfolio";
-import { Github, Linkedin, Instagram } from "lucide-react";
+import { Github, Linkedin, Instagram,  } from "lucide-react";
+// import { SiGithub, SiInstagram } from "@icons-pack/react-simple-icons";
 
 type Props = {
   children?: React.ReactNode;
@@ -13,6 +14,7 @@ type Props = {
 const iconList = [
   { Icon: Github, href: "https://github.com/neog5" },
   { Icon: Linkedin, href: "https://linkedin.com/in/het-dilip-patel" },
+  //   { Icon: SiLinkedin, href: "https://linkedin.com/in/het-dilip-patel" },
   { Icon: Instagram, href: "https://instagram.com/neo_g5" },
 ];
 

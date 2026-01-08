@@ -329,6 +329,44 @@ export const timelineData = [
   },
 ];
 
+export const projectsData = [
+  {
+    tagline: "Featured Project",
+    title: "Cirqle",
+    description:
+      "A web app that helps users track and organize job applications, collaborate with friends and match resume to job descriptions using AI.",
+    tech: ["Next.js", "TailwindCSS", "Supabase", "PostgreSQL", "Gemini API"],
+    github: "https://github.com/neog5/Cirqle",
+    // external: "https://vscode.com",
+    cta: "https://cirqle-jobs.vercel.app/dashboard",
+    ctaText: "Visit App",
+    cover: "/projects/cirqle.png",
+  },
+  {
+    tagline: "Hackathon Winner",
+    title: "PerryOps",
+    description:
+      "A pre-operative procedure management app that streamlines the process for patients and healthcare providers.",
+    tech: ["Flutter", "FastAPI", "Firebase", "MedGemma", "Qwen-32B"],
+    github: "https://github.com/neog5/PerryOps",
+    // external: "https://course.com",
+    cta: "https://ics.uci.edu/2025/12/08/medtech-innovation-hackathon-2025-creates-collaboration-and-innovation/",
+    ctaText: "Read Article",
+    cover: "/projects/perryops.png",
+  },
+  {
+    tagline: "Capstone Project",
+    title: "Pic2Plate",
+    description:
+      "A mobile apps that suggests recipes based on ingredients from a photo of your fridge or pantry using image recognition and AI.",
+    tech: ["Flutter", "FastAPI", "Python", "RapidAPI", "Gemini API"],
+    github: "https://github.com/neog5/pic2plate",
+    cta: "https://www.youtube.com/watch?v=_-5pvwARC0s",
+    ctaText: "Watch Demo",
+    cover: "/projects/pic2plate.png",
+  },
+];
+
 // export const skillsSection = {
 //   title: "what i do",
 //   skills: [
