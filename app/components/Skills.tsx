@@ -16,8 +16,11 @@ export default function Skills() {
     },
   };
   return (
-    <div id="skills" className="">
-      <div className="px-64 py-20 xs:py-24 md:py-32 lg:py-36">
+    <div
+      id="skills"
+      className="2xl:max-w-[1200px] xl:max-w-[1000px] mx-auto px-6"
+    >
+      <div className="py-20 xs:py-24 md:py-32 lg:py-36">
         {/* <h2 className="heading-secondary">Skills</h2> */}
         <h2 className="flex items-center text-3xl font-bold mb-10 w-full whitespace-nowrap before:content-[''] before:block before:h-[1px] before:bg-slate-700 before:w-full before:mr-5 before:relative before:top-[2px]">
           <span className="font-mono text-accent text-xl mr-2">04.</span>

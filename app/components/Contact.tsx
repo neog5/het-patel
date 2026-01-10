@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <motion.section
       id="contact"
-      className="max-w-[600px] mx-auto mb-24 text-center md:mb-12 xs:py-24 md:py-32 lg:py-36"
+      className="max-w-[600px] mx-auto px-6 mb-24 text-center md:mb-12 xs:py-24 md:py-32 lg:py-36"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}

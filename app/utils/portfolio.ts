@@ -77,7 +77,7 @@ export const navbarSection = {
 export const heroSection = {
   subtitle: "Hello, my name is ",
   title: "Het Patel.",
-  tagline: "I create applications that solve normal day problems.",
+  tagline: "I create applications to solve normal day problems.",
   description:
     "I'm a passionate Fullstack Web Developer having an experience of creating web applications. With React and Next.js being my recent favorites.",
   specialText: "Recent Graduate from UCI",
@@ -97,10 +97,11 @@ export const aboutSection = {
     title: "Here are a few technologies I’ve been working with recently:",
     items: [
       "Next.js",
-      "React.js",
+      "React",
       "TailwindCSS",
       "JavaScript",
       "TypeScript",
+      "C++",
       "ColdFusion",
       "FastAPI",
       "Python",
@@ -289,23 +290,23 @@ export const timelineData = [
     description:
       "Graduated with a 3.94 GPA. Built strong foundations in Data Structures, Algorithms, and System Design.",
     icon: "🎓",
-    tags: ["C++", "OS", "DBMS"],
+    tags: ["C++", "OS", "DBMS", "Computer Achitecture"],
   },
   {
     year: "Jan 2022 - Jul 2022",
     title: "Full Stack Development Intern",
     place: "udChalo, Pune",
     description:
-      "First time working on an enterprise-scale project. Contributed to both frontend and backend using Angular and Node.js.",
+      "First time working on an enterprise project. Contributed to building a flights booking portal as well as the admin dashboard.",
     icon: "📋",
-    tags: ["Angular", "Git", "Collaboration"],
+    tags: ["Angular", "Git"],
   },
   {
     year: "Aug 2022 - Jul 2024",
-    title: "Software Engineer",
+    title: "Associate Support Analyst",
     place: "SLB (Schlumberger)",
     description:
-      "Working on building scalable web applications. Gained experience in handling real-world challenges and collaborating in a team.",
+      "Worked on maintaining, enhancing and migrating legacy web applications used by teams globally. Gained experience in collaborating with cross-functional teams.",
     icon: "💼",
     tags: ["ColdFusion", "Databases", "Azure"],
   },
@@ -314,7 +315,7 @@ export const timelineData = [
     title: "Master of Computer Science",
     place: "University of California, Irvine",
     description:
-      "Specialized in Distributed Systems and AI. Graduated recently ready for full-time opportunities.",
+      "Pursued a Master's degree in Computer Science with a focus on applications of AI and Machine Learning. Worked on projects involving machine learning models and scalable systems.",
     icon: "🎓",
     tags: ["AI/ML", "Distributed Systems"],
   },
@@ -323,7 +324,7 @@ export const timelineData = [
     title: "Building the Future",
     place: "Open to Work",
     description:
-      "Building portfolio projects with Next.js and applying for Software Engineering roles.",
+      "Building projects with focus on learning new technologies and expanding my skill set.",
     icon: "🚀",
     tags: ["Next.js", "React", "Typescript"],
   },
@@ -334,7 +335,7 @@ export const projectsData = [
     tagline: "Featured Project",
     title: "Cirqle",
     description:
-      "A web app that helps users track and organize job applications, collaborate with friends and match resume to job descriptions using AI.",
+      "Modern way to track job applications. A website created for collaboration with other job seekers. Easily manage, organize and share your job search journey using Cirqle.",
     tech: ["Next.js", "TailwindCSS", "Supabase", "PostgreSQL", "Gemini API"],
     github: "https://github.com/neog5/Cirqle",
     // external: "https://vscode.com",
@@ -346,7 +347,7 @@ export const projectsData = [
     tagline: "Hackathon Winner",
     title: "PerryOps",
     description:
-      "A pre-operative procedure management app that streamlines the process for patients and healthcare providers.",
+      "A mobile app to assist paramedics and patients to manage the pre-operation process effectively. Developed during MedTech Innovation Hackathon 2025 at UCI, won 1st place for best use of AI/ML.",
     tech: ["Flutter", "FastAPI", "Firebase", "MedGemma", "Qwen-32B"],
     github: "https://github.com/neog5/PerryOps",
     // external: "https://course.com",
@@ -358,7 +359,7 @@ export const projectsData = [
     tagline: "Capstone Project",
     title: "Pic2Plate",
     description:
-      "A mobile apps that suggests recipes based on ingredients from a photo of your fridge or pantry using image recognition and AI.",
+      "A mobile app that makes cooking hassle free by generating recipes from food images. Simply snap a picture of your ingredients and the app suggests recipes tailored to what you have on hand.",
     tech: ["Flutter", "FastAPI", "Python", "RapidAPI", "Gemini API"],
     github: "https://github.com/neog5/pic2plate",
     cta: "https://www.youtube.com/watch?v=_-5pvwARC0s",

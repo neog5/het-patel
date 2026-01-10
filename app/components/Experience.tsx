@@ -21,10 +21,10 @@ const ExperienceTimeline = () => {
 
   return (
     <section
-      className="min-h-screen py-20 relative overflow-hidden max-w-[1200px] mx-auto px-6 "
+      className="min-h-screen py-20 relative overflow-hidden 2xl:max-w-[1200px] xl:max-w-[1000px] mx-auto px-6 "
       id="experience"
     >
-      <div className="container mx-auto px-4 max-w-6xl">
+      <div className="container mx-auto">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}

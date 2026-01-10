@@ -1,26 +1,15 @@
 "use client";
 import Image from "next/image";
 import { motion } from "motion/react";
-// import { Github } from "lucide-react";
 import { SiGithub } from "@icons-pack/react-simple-icons";
 import { projectsData } from "../utils/portfolio";
 
-// 1. Data Interface
-interface FeaturedProject {
-  title: string;
-  description: string;
-  tech: string[];
-  github?: string;
-  external?: string;
-  cover: string;
-  cta?: string;
-}
-
-// 2. Mock Data (Replace with your Content)
-
 const Featured = () => {
   return (
-    <section id="projects" className="max-w-[1000px] mx-auto py-24 px-6 ">
+    <section
+      id="projects"
+      className="2xl:max-w-[1200px] xl:max-w-[1000px] lg:max-w-[800px] sm:max-w-[600px] max-w-[360px] mx-auto py-24 px-6 "
+    >
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -109,15 +98,6 @@ const Featured = () => {
                       <SiGithub />
                     </a>
                   )}
-                  {/* {project.external && (
-                    <a
-                      href={project.external}
-                      className="hover:text-accent transition-colors"
-                      aria-label="External Link"
-                    >
-                      E
-                    </a>
-                  )} */}
                   {project.cta && (
                     <a
                       href={project.cta}

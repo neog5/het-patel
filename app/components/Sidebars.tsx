@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import { author } from "../utils/portfolio";
-import { Github, Linkedin, Instagram,  } from "lucide-react";
+import { Github, Linkedin, Instagram } from "lucide-react";
 // import { SiGithub, SiInstagram } from "@icons-pack/react-simple-icons";
 
 type Props = {
@@ -27,7 +27,7 @@ const Sidebars = ({ children, className = "" }: Props) => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className={`fixed bottom-0 flex-col gap-4 items-center md:flex left-6 xl:left-12 ${className}`}
+        className={`fixed bottom-0 hidden lg:flex flex-col gap-4 items-center left-6 xl:left-12 ${className}`}
       >
         {iconList.map((icon, i) => (
           <a
@@ -48,7 +48,7 @@ const Sidebars = ({ children, className = "" }: Props) => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className={`fixed bottom-0 flex-col items-center md:flex right-6 xl:right-12`}
+        className={`fixed bottom-0 flex-col items-center hidden lg:flex right-6 xl:right-12`}
       >
         <a
           href={`mailto:${author.email}`}
