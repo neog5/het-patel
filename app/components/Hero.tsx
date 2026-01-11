@@ -64,6 +64,7 @@ const Hero = () => {
         viewport={{ once: true }}
       >
         <a
+          target="_blank"
           className="inline-block border border-accent text-accent bg-transparent rounded px-7 py-4 text-sm font-mono hover:bg-accent/10 transition-colors duration-300"
           href={resumeFileUrl}
         >
