@@ -33,22 +33,28 @@ const ExperienceCard = ({
       <div className="hidden md:block w-5/12" />
 
       {/* 2. The Dot on the line (Visual Anchor) */}
-      <div className="absolute left-8 md:left-1/2 w-4 h-4 bg-bg-secondary border-2 border-blue-500 rounded-full -translate-x-1/2 z-10" />
+      <div className="absolute hidden md:block left-8 top-1/2 md:left-1/2 w-4 h-4 bg-bg-secondary border-2 border-accent rounded-full -translate-x-1/2 -translate-y-1/2 z-10" />
 
       {/* 3. The Content Card */}
-      <div className="w-full pl-20 md:pl-0 md:w-5/12">
+      <div className="w-full md:w-5/12">
         <div className="bg-bg-secondary backdrop-blur-sm shadow-md p-6 rounded-2xl hover:shadow-lg hover:scale-105 transition-all duration-300 group">
           {/* Header with Icon */}
           <div className="flex items-center gap-3 mb-3">
             <div className="p-2 bg-accent-light rounded-lg text-accent group-hover:scale-101 transition-all">
               {item.icon}
             </div>
-            <span className="text-sm font-mono text-accent">{item.year}</span>
+            <span className="text-xs md:text-sm font-mono text-accent">
+              {item.year}
+            </span>
           </div>
 
-          <h3 className="text-xl font-bold text-dark-1 mb-1">{item.title}</h3>
-          <p className="text-sm text-text mb-3 font-medium">{item.place}</p>
-          <p className="text-text leading-relaxed text-sm mb-4">
+          <h3 className="text-base md:text-xl font-bold text-dark-1 mb-1">
+            {item.title}
+          </h3>
+          <p className="text-xs md:text-sm text-text mb-3 font-medium">
+            {item.place}
+          </p>
+          <p className="text-text leading-relaxed text-xs md:text-sm mb-4">
             {item.description}
           </p>
 

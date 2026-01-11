@@ -42,16 +42,16 @@ const Navbar = () => {
       transition={{ duration: 0.25, ease: "easeInOut" }}
       className="fixed top-0 w-full z-50 bg-bg/85 backdrop-blur-md shadow-sm"
     >
-      <div className="mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+      <div className="mx-auto px-6 lg:px-12 h-14 md:h-20 flex items-center justify-between">
         <a
           href="#hero"
-          className="text-accent font-signature text-4xl font-bold z-50 relative"
+          className="text-accent font-signature text-2xl md:text-4xl font-bold z-50 relative"
           onClick={() => setMenuOpen(false)}
         >
           Het Patel
         </a>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-8">
           {navbarSection.navLinks.map((link) => (
             <a
               key={link.name}
@@ -74,7 +74,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden z-50">
+        <div className="lg:hidden z-50">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="text-accent focus:outline-none"
@@ -92,7 +92,7 @@ const Navbar = () => {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
-              className="fixed inset-0 bg-bg h-screen w-screen flex flex-col items-center justify-center gap-8 md:hidden z-40"
+              className="fixed inset-0 bg-bg h-screen w-screen flex flex-col items-center justify-center gap-8 lg:hidden z-40"
             >
               {navbarSection.navLinks.map((link) => (
                 <a

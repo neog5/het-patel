@@ -56,6 +56,7 @@ export const author = {
 //  */
 
 const resumeFileName = "Het_Patel_Resume.pdf";
+export const resumeFileUrl = "/" + resumeFileName;
 // Navbar Section
 
 export const navbarSection = {
@@ -68,7 +69,7 @@ export const navbarSection = {
   ],
   cta: {
     title: "resume",
-    url: `/${resumeFileName}`,
+    url: resumeFileUrl,
   },
 };
 
@@ -127,6 +128,22 @@ export const skillsData = [
     icon: "/skills/js.png",
   },
   {
+    name: "NextJS",
+    icon: "/skills/nextjs.png",
+  },
+  {
+    name: "TailwindCSS",
+    icon: "/skills/tailwind.png",
+  },
+  {
+    name: "C++",
+    icon: "/skills/cpp.svg",
+  },
+  {
+    name: "NodeJS",
+    icon: "/skills/nodejs.png",
+  },
+  {
     name: "Flutter",
     icon: "/skills/flutter.png",
   },
@@ -141,10 +158,6 @@ export const skillsData = [
   {
     name: "VS Code",
     icon: "/skills/vscode.png",
-  },
-  {
-    name: "TailwindCSS",
-    icon: "/skills/tailwind.png",
   },
   {
     name: "ReactJS",
@@ -163,20 +176,28 @@ export const skillsData = [
     icon: "/skills/postgresql.png",
   },
   {
-    name: "NextJS",
-    icon: "/skills/nextjs.png",
-  },
-  {
-    name: "NodeJS",
-    icon: "/skills/nodejs.png",
-  },
-  {
     name: "MongoDB",
     icon: "/skills/mongodb.png",
   },
   {
     name: "Github",
     icon: "/skills/github.png",
+  },
+  {
+    name: "Amazon Web Services",
+    icon: "/skills/aws.png",
+  },
+  {
+    name: "Angular",
+    icon: "/skills/angular.png",
+  },
+  {
+    name: "Supabase",
+    icon: "/skills/supabase.png",
+  },
+  {
+    name: "Java",
+    icon: "/skills/java.png",
   },
 ];
 

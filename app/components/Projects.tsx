@@ -8,20 +8,22 @@ const Featured = () => {
   return (
     <section
       id="projects"
-      className="2xl:max-w-[1200px] xl:max-w-[1000px] lg:max-w-[800px] sm:max-w-[600px] max-w-[360px] mx-auto py-24 px-6 "
+      className="2xl:max-w-[1300px] xl:max-w-[1080px] lg:max-w-[900px] sm:max-w-[750px] max-w-[600px] mx-auto py-12 md:py-24 px-6 md:px-12 "
     >
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className="flex items-center text-3xl font-bold mb-10 w-full whitespace-nowrap after:content-[''] after:block after:h-[1px] after:bg-slate-700 after:w-full after:ml-5 after:relative after:top-[2px]"
+        className="flex items-center text-2xl md:text-3xl font-bold mb-10 w-full whitespace-nowrap after:content-[''] after:block after:h-[1px] after:bg-slate-700 after:w-1/2 after:ml-5 after:relative after:top-[2px]"
       >
-        <span className="font-mono text-accent text-xl mr-2">03.</span>
+        <span className="font-mono text-accent text-base md:text-xl mr-2">
+          03.
+        </span>
         Some Things I’ve Built
       </motion.h2>
 
-      <ul className="flex flex-col gap-24">
+      <ul className="flex flex-col gap-12 md:gap-24">
         {projectsData.map((project, i) => {
           const isEven = i % 2 === 0;
 
@@ -32,7 +34,7 @@ const Featured = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="relative grid grid-cols-12 items-center gap-2"
+              className="relative flex flex-col-reverse md:grid md:grid-cols-12 items-center gap-2"
             >
               {/* --- Project Content (Text) --- */}
               <div
@@ -52,18 +54,18 @@ const Featured = () => {
                 p-6 md:p-0 bg-bg-secondary md:bg-transparent rounded-lg md:rounded-none backdrop-blur-sm md:backdrop-blur-none
               `}
               >
-                <p className="font-mono text-accent text-sm mb-2">
+                <p className="font-mono text-accent text-xs md:text-sm mb-2">
                   {project.tagline || "Featured Project"}
                 </p>
-                <h3 className="text-text font-bold text-2xl mb-5 hover:text-accent transition-colors">
+                <h3 className="text-text font-bold text-lg md:text-2xl mb-2 md:mb-5 hover:text-accent transition-colors">
                   <a href={project.github}>{project.title}</a>
                 </h3>
 
                 {/* Description Box */}
                 <div
                   className={`
-                  text-slate-600 text-[16px] md:bg-bg-secondary md:p-6 rounded md:shadow-xl
-                  ${isEven ? "md:-mr-12" : "md:-ml-12"}
+                  text-slate-600 text-xs md:text-base md:bg-bg-secondary md:p-6 rounded md:shadow-xl
+                  ${isEven ? "md:-mr-6" : "md:-ml-6"}
                   hover:shadow-2xl transition-shadow
                 `}
                 >
@@ -73,7 +75,7 @@ const Featured = () => {
                 {/* Tech Stack */}
                 <ul
                   className={`
-                  flex flex-wrap gap-4 mt-6 text-slate-400 font-mono text-sm
+                  flex flex-wrap gap-4 mt-6 text-slate-400 font-mono text-xs md:text-sm
                   ${isEven ? "justify-start" : "md:justify-end"}
                 `}
                 >
@@ -85,7 +87,7 @@ const Featured = () => {
                 {/* Links */}
                 <div
                   className={`
-                  flex items-center gap-4 mt-6 text-slate-400
+                  flex items-center gap-4 mt-6 text-slate-400 text-xs md:text-sm
                   ${isEven ? "justify-start" : "md:justify-end"}
                 `}
                 >

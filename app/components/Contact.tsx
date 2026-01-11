@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <motion.section
       id="contact"
-      className="max-w-[600px] mx-auto px-6 mb-24 text-center md:mb-12 xs:py-24 md:py-32 lg:py-36"
+      className="max-w-[600px] mx-auto px-6 mb-24 text-center md:mb-12 py-24 md:py-32 lg:py-36"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
@@ -25,7 +25,7 @@ const Contact = () => {
       </h2>
 
       {/* Description Paragraph */}
-      <p className="text-slate-400 text-lg leading-relaxed mb-12">
+      <p className="text-slate-400 text-base md:text-lg leading-relaxed mb-8 md:mb-12">
         I am currently open to new opportunities and collaborations. Whether you
         have a question, a project idea, or just want to say hello, feel free to
         reach out. I look forward to connecting with you!

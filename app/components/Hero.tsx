@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "motion/react";
-import { heroSection } from "../utils/portfolio";
+import { heroSection, resumeFileUrl } from "../utils/portfolio";
 
 const Hero = () => {
   const { subtitle, title, tagline, description, specialText } = heroSection;
@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="2xl:max-w-[1200px] xl:max-w-[1000px] lg:max-w-[800px] sm:max-w-[600px] max-w-[360px] mx-auto px-6 min-h-screen h-full flex flex-col justify-center gap-6 xs:gap-7 mt-12 xs:mt-0"
+      className="2xl:max-w-[1300px] xl:max-w-[1080px] lg:max-w-[900px] sm:max-w-[750px] max-w-[600px] mx-auto px-12 min-h-screen h-full flex flex-col justify-center gap-6 xs:gap-7 mt-12 xs:mt-0"
     >
       <motion.p
         initial={{ opacity: 0, y: 50 }}
@@ -57,6 +57,19 @@ const Hero = () => {
       >
         {specialText}
       </motion.p>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5, duration: 0.5 }}
+        viewport={{ once: true }}
+      >
+        <a
+          className="inline-block border border-accent text-accent bg-transparent rounded px-7 py-4 text-sm font-mono hover:bg-accent/10 transition-colors duration-300"
+          href={resumeFileUrl}
+        >
+          View Resume
+        </a>
+      </motion.div>
     </div>
   );
 };
