@@ -28,16 +28,17 @@ export default function Icon() {
       <div
         style={{
           fontSize: 24,
-          background: "#00a6f4",
-          width: "200%",
+          background: "transparent",
+          width: "100%",
           height: "100%",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
           //   backgroundColour: "#00a6f4",
           fontFamily: "holland, sans-serif",
+          fontWeight: "700",
           color: "white",
-          borderRadius: "50%",
+          borderRadius: "8px",
         }}
       >
         H
@@ -53,7 +54,7 @@ export default function Icon() {
           name: "holland",
           data: fontData,
           style: "normal",
-          weight: 400,
+          weight: 700,
         },
       ],
     }
