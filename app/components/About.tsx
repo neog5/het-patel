@@ -69,7 +69,7 @@ const About = () => {
           </p>
           {list && (
             <>
-              <p>{list.title}</p>
+              <p className="hidden sm:block">{list.title}</p>
               <ul className="text-sm font-mono gap-1 hidden sm:grid grid-cols-2 w-2/3">
                 {list.items.map((item, i) => (
                   <div key={i}>

@@ -132,52 +132,72 @@ export const skillsData = [
     icon: "/skills/nextjs.png",
   },
   {
-    name: "TailwindCSS",
-    icon: "/skills/tailwind.png",
+    name: "ReactJS",
+    icon: "/skills/react.png",
   },
   {
-    name: "C++",
-    icon: "/skills/cpp.svg",
-  },
-  {
-    name: "NodeJS",
-    icon: "/skills/nodejs.png",
-  },
-  {
-    name: "Flutter",
-    icon: "/skills/flutter.png",
-  },
-  {
-    name: "Python",
-    icon: "/skills/python.png",
+    name: "Angular",
+    icon: "/skills/angular.png",
   },
   {
     name: "Coldfusion",
     icon: "/skills/coldfusion.png",
   },
   {
-    name: "VS Code",
-    icon: "/skills/vscode.png",
-  },
-  {
-    name: "ReactJS",
-    icon: "/skills/react.png",
+    name: "Flutter",
+    icon: "/skills/flutter.png",
   },
   {
     name: "TypeScript",
     icon: "/skills/ts.png",
   },
   {
+    name: "TailwindCSS",
+    icon: "/skills/tailwind.png",
+  },
+  {
     name: "Framer Motion",
     icon: "/skills/framer.png",
+  },
+  {
+    name: "NodeJS",
+    icon: "/skills/nodejs.png",
+  },
+  {
+    name: "Firebase",
+    icon: "/skills/firebase.png",
+  },
+  {
+    name: "Supabase",
+    icon: "/skills/supabase.png",
+  },
+  {
+    name: "MongoDB",
+    icon: "/skills/mongodb.png",
+  },
+  {
+    name: "Google BigQuery",
+    icon: "/skills/bigquery.svg",
   },
   {
     name: "PostgreSQL",
     icon: "/skills/postgresql.png",
   },
   {
-    name: "MongoDB",
-    icon: "/skills/mongodb.png",
+    name: "C++",
+    icon: "/skills/cpp.svg",
+  },
+  {
+    name: "Java",
+    icon: "/skills/java.png",
+  },
+  {
+    name: "Python",
+    icon: "/skills/python.png",
+  },
+  {
+    name: "VS Code",
+    icon: "/skills/vscode.png",
   },
   {
     name: "Github",
@@ -188,16 +208,12 @@ export const skillsData = [
     icon: "/skills/aws.png",
   },
   {
-    name: "Angular",
-    icon: "/skills/angular.png",
+    name: "Google Cloud Platforms",
+    icon: "/skills/gcp.png",
   },
   {
-    name: "Supabase",
-    icon: "/skills/supabase.png",
-  },
-  {
-    name: "Java",
-    icon: "/skills/java.png",
+    name: "Docker",
+    icon: "/skills/docker.png",
   },
 ];
 

@@ -21,7 +21,7 @@ const ExperienceTimeline = () => {
 
   return (
     <section
-      className="min-h-screen py-20 relative overflow-hidden 2xl:max-w-[1300px] xl:max-w-[1080px] lg:max-w-[900px] sm:max-w-[750px] max-w-[600px] mx-auto px-6 "
+      className="min-h-screen py-12 md:py-24 relative overflow-hidden 2xl:max-w-[1300px] xl:max-w-[1080px] lg:max-w-[900px] sm:max-w-[750px] max-w-[600px] mx-auto px-6 "
       id="experience"
     >
       <div className="container mx-auto">
