@@ -63,7 +63,7 @@ const About = () => {
           </p>
           <p>
             I recently graduated with a Masters degree in Computer Science and
-            now lookng for new opportunities to contribute and grow as a
+            now looking for new opportunities to contribute and grow as a
             developer. My goal is to always build products that provide real
             value to users.
           </p>
